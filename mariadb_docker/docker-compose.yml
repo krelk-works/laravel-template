@@ -1,0 +1,15 @@
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    ports:
+      - "4000:3306"
+    environment:
+      MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: "yes"  # Permitir contraseña vacía
+      MARIADB_ROOT_PASSWORD: ""  # Sin contraseña para root
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    restart: always
+
+volumes:
+  mariadb_data:
