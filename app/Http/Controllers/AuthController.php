@@ -48,7 +48,7 @@ class AuthController extends Controller
         }
 
         return back()->withErrors([
-            'nick' => 'Credenciales inválidas.',
+            'nick' => 'No tens permisos per entrar a la intranet.',
         ]);
     }
 

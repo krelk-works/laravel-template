@@ -3,5 +3,5 @@
 @section('title', 'Dashboard')
 
 @section('content')
-<h3>Esto funciona hulio</h3>
+<h3>Funciona!</h3>
 @endsection
